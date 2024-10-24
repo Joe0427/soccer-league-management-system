@@ -13,7 +13,7 @@ WHERE NOT EXISTS (
     FROM GamePlayerStats gps
     JOIN Player p2 ON gps.PlayerID = p2.PlayerID
     WHERE p2.TeamID = t.TeamID
-    AND gps.RedCards > 0
+    AND gps.PlayerRedCards > 0
 );
 
 
